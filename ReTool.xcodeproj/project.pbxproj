@@ -48,6 +48,7 @@
 		AF0373F11F77E7D2003CE251 /* ReToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReToolUITests.swift; sourceTree = "<group>"; };
 		AF0373F31F77E7D2003CE251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF0373FF1F77F882003CE251 /* Res.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res.swift; sourceTree = "<group>"; };
+		AF0374021F78F62D003CE251 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		AF0373C71F77E7D2003CE251 = {
 			isa = PBXGroup;
 			children = (
+				AF0374021F78F62D003CE251 /* images */,
 				AF0373D21F77E7D2003CE251 /* ReTool */,
 				AF0373E51F77E7D2003CE251 /* ReToolTests */,
 				AF0373F01F77E7D2003CE251 /* ReToolUITests */,
