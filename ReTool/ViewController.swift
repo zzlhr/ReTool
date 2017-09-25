@@ -39,10 +39,22 @@ class ViewController: NSViewController,NSTableViewDataSource,NSTableViewDelegate
     var data = [String]()
     
     @IBAction func onclick(_ sender: Any){
-        var pattern = reText.stringValue
-        var matched = text.accessibilityValue()
+        //获取正则表达式
+        let pattern = reText.stringValue
+        //获取待匹配文本
+        let matched = text.accessibilityValue()
+        
         NSLog("regex:"+pattern+"\n"+"matched:"+matched!)
-        var result: [Res] = check(pattern: pattern, text: matched!)
+        if pattern == "" || matched == ""{
+            let alert = NSAlert()
+            
+            alert.messageText = "非法操作："
+            alert.informativeText = "待匹配的内容和正则表达式不能为空"
+            alert.addButton(withTitle: "确认")
+            alert.runModal()
+            return
+        }
+        let result: [Res] = check(pattern: pattern, text: matched!)
         data.removeAll()
         for re in result{
             let maStr = NSString(string: matched!)
